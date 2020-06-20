@@ -1,0 +1,28 @@
+<div class="page" data-uuid="b39d0f0f8b2f699f17b84a7a28eaa1df" data-level="1">
+    <div class="content">
+      <h1>Velocity Obstacles</h1>
+      <h2 id="slides">Slides</h2>
+<h3 id="from-cartesian-to-velocity-space">From Cartesian to velocity space</h3>
+<p>If you take a Cartesian space where agent A is centered and a point. Then B is at position x<sub>b</sub>-x<sub>a</sub> and has a radius of r<sub>a</sub>+r<sub>b</sub> (because A is a point and the radius has to be inflated).</p>
+<p>By doing this you calculate the Minkowski sum. The Minkowsi sum is X ⊕ Y = {x + y | x ∈ X, y ∈ Y}. So if X is the position of A {[0, 0]}, and Y is the position of B {[1, 1]}. Then X ⊕ Y = {[1, 1]}.</p>
+<h3 id="velocity-space">Velocity Space</h3>
+<p>If we take that same 2d plane but change the X and Y axis and change them to velocities (by dividing everything by one second).</p>
+<p>Now every point in this space denotes a velocity. The question now is what is the set of velocities that will lead to a collision. This is the VO<sub>A|B</sub></p>
+<p>If we pick some point V<sub>1</sub> and have it define a ray starting at the origin and going through V<sub>1</sub> and that ray passes through the disk at some time τ &gt;= 0 then this is a colliding velocity and is in VO<sub>A|B</sub>.</p>
+<h3 id="revising-definition">Revising definition</h3>
+<p>Lets pick some V. If for any τ &gt;= 0 Vτ is in the set denoted by the circle with origin at x<sub>b</sub> - x<sub>a</sub> with radius r<sub>a</sub> + r<sub>b</sub> then it is in the VO<sub>A|B</sub>.</p>
+<p>This leads to the time to collision equation</p>
+<h3 id="time-horizon-vo">Time horizon VO</h3>
+<p>If you move a disk closer to the origin you can find the time horizon VO.</p>
+<p>Given two agents, A and B, the velocity obstacle VO<sup>τ<sub>H</sub></sup><sub>A|B</sub> (read: the velocity obstacle of A induced by B for time horizon τ<sub>H</sub>) is the set of all relative velocities that will lead to a collision between A and B at some moment within the next τ<sub>H</sub> seconds.</p>
+<p>\begin{equation}
+VO^{\tau_{H}}_{A|B} = { v | \exists \tau \in [0, \tau_{H}]: \tau V \cap \in D(x_{B} - X_{A}, r_{A} + r_{B}_{}) \ne \emptyset }
+\end{equation}</p>
+<p>The velocity obstacle VO for time horizon τ<sub>H</sub> induced on A by B is equal to all velocities such that a τ exists between 0 and τ<sub>H</sub> (inclusive) such that τ V unioned with the disk centered at X<sub>B</sub> - X<sub>A</sub> with radius r<sub>A</sub> + r<sub>B</sub> is not empty.</p>
+<p>If a collision happens beyond a certain τ<sub>H</sub> it might not matter</p>
+<p>Geometrically, this VO is still a cone (assuming circular agents). But this cone is truncated by a disk of radius (r<sub>A</sub> + r<sub>B</sub>)/τ<sub>H</sub> and centered at (x<sub>A</sub> - x<sub>B</sub>)/τ<sub>H</sub> compared to the VO discussed above.</p>
+<p>GOT TO 24:40 ish</p>
+
+    </div>
+</div>
+

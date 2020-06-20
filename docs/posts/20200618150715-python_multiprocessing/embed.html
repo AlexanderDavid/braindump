@@ -1,0 +1,44 @@
+<html>  
+<head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://braindump.alexday.me/css/embed.min.43ffb24d6d58dc9382bd6ecf153b39e321fbfcbec334d4d3aacc42336b79fe2c.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <main>
+      <section id="title">
+        <h1>Python Multiprocessing</h1>
+      </section>
+      <section id="content">
+        <dl>
+<dt>tags</dt>
+<dd><a href="/posts/20200618150702-python/">Python</a></dd>
+</dl>
+<h2 id="concurrent-futures"><a href="https://docs.python.org/3/library/concurrent.futures.html">Concurrent Futures</a></h2>
+<p>High level wrapper for async execution of callables. The basic idea is that execution is passed to either threads (with <code>ThreadPoolExecutor</code>) or processes (with <code>ProcessPollExecutor</code>). Both of them expose the same methods and inheret from the abstract <code>Executor</code> class.</p>
+<p>To submit a single fuction for async work:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">concurrent.futures</span> <span style="color:#000;font-weight:bold">import</span> ThreadPoolExecutor
+
+<span style="color:#000;font-weight:bold">with</span> ThreadPoolExecutor(max_workers<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>) <span style="color:#000;font-weight:bold">as</span> executor:
+    future <span style="color:#000;font-weight:bold">=</span> executor<span style="color:#000;font-weight:bold">.</span>submit(<span style="color:#0086b3">pow</span>, <span style="color:#099">2</span>, <span style="color:#099">5</span>)
+    <span style="color:#000;font-weight:bold">print</span>(future<span style="color:#000;font-weight:bold">.</span>result())
+</code></pre></div><p>Can also map a single function over a list of iterables:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">concurrent.futures</span> <span style="color:#000;font-weight:bold">import</span> ThreadPoolExecutor
+<span style="color:#000;font-weight:bold">from</span> <span style="color:#555">math</span> <span style="color:#000;font-weight:bold">import</span> exp
+
+<span style="color:#000;font-weight:bold">with</span> ThreadPoolExecutor(max_workers<span style="color:#000;font-weight:bold">=</span><span style="color:#099">3</span>) <span style="color:#000;font-weight:bold">as</span> executor:
+    results <span style="color:#000;font-weight:bold">=</span> executor<span style="color:#000;font-weight:bold">.</span>map(exp, [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>])
+
+<span style="color:#000;font-weight:bold">for</span> result <span style="color:#000;font-weight:bold">in</span> results:
+    <span style="color:#000;font-weight:bold">print</span>(result)
+</code></pre></div>
+      </section>
+    </main>
+    <script type="text/javascript">
+      window.MathJax.typeset();
+    </script>
+</body>
+</html>
