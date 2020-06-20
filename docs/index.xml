@@ -2,68 +2,68 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Index on Alex&#39;s Braindump</title>
-    <link>http://braindump.alexday.me/</link>
+    <link>https://braindump.alexday.me/</link>
     <description>Recent content in Index on Alex&#39;s Braindump</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 29 May 2020 21:44:03 +0800</lastBuildDate>
     
-	<atom:link href="http://braindump.alexday.me/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://braindump.alexday.me/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Test Driven Development</title>
-      <link>http://braindump.alexday.me/posts/20200619110811-test_driven_development/</link>
+      <link>https://braindump.alexday.me/posts/20200619110811-test_driven_development/</link>
       <pubDate>Fri, 19 Jun 2020 20:47:28 -0400</pubDate>
       
-      <guid>http://braindump.alexday.me/posts/20200619110811-test_driven_development/</guid>
+      <guid>https://braindump.alexday.me/posts/20200619110811-test_driven_development/</guid>
       <description>TDD Cycle  Requirements are turned into very specific test cases The code is improved so thte test passes  </description>
     </item>
     
     <item>
       <title>Motion Planning</title>
-      <link>http://braindump.alexday.me/posts/20200619000222-motion_planning/</link>
+      <link>https://braindump.alexday.me/posts/20200619000222-motion_planning/</link>
       <pubDate>Fri, 19 Jun 2020 20:47:25 -0400</pubDate>
       
-      <guid>http://braindump.alexday.me/posts/20200619000222-motion_planning/</guid>
+      <guid>https://braindump.alexday.me/posts/20200619000222-motion_planning/</guid>
       <description>Velocity Obstacles</description>
     </item>
     
     <item>
       <title>Fall 2020</title>
-      <link>http://braindump.alexday.me/posts/20200618223726-fall_2020/</link>
+      <link>https://braindump.alexday.me/posts/20200618223726-fall_2020/</link>
       <pubDate>Fri, 19 Jun 2020 20:47:22 -0400</pubDate>
       
-      <guid>http://braindump.alexday.me/posts/20200618223726-fall_2020/</guid>
+      <guid>https://braindump.alexday.me/posts/20200618223726-fall_2020/</guid>
       <description>Classes Data Visualization CPSC 6030  Data Vis Test Note  Computer Security Principles CPSC 6200 Artificial Intelligence CPSC 6420 Network Science CPSC 8480 New PhD Student Seminar CPSC 9500 </description>
     </item>
     
     <item>
       <title>Velocity Obstacles</title>
-      <link>http://braindump.alexday.me/posts/20200618220802-velocity_obstacles/</link>
+      <link>https://braindump.alexday.me/posts/20200618220802-velocity_obstacles/</link>
       <pubDate>Fri, 19 Jun 2020 20:47:19 -0400</pubDate>
       
-      <guid>http://braindump.alexday.me/posts/20200618220802-velocity_obstacles/</guid>
+      <guid>https://braindump.alexday.me/posts/20200618220802-velocity_obstacles/</guid>
       <description>Slides From Cartesian to velocity space If you take a Cartesian space where agent A is centered and a point. Then B is at position xb-xa and has a radius of ra+rb (because A is a point and the radius has to be inflated).
 By doing this you calculate the Minkowski sum. The Minkowsi sum is X ⊕ Y = {x + y | x ∈ X, y ∈ Y}. So if X is the position of A {[0, 0]}, and Y is the position of B {[1, 1]}.</description>
     </item>
     
     <item>
       <title>eBuy</title>
-      <link>http://braindump.alexday.me/posts/20200618195616-ebuy/</link>
+      <link>https://braindump.alexday.me/posts/20200618195616-ebuy/</link>
       <pubDate>Fri, 19 Jun 2020 20:47:16 -0400</pubDate>
       
-      <guid>http://braindump.alexday.me/posts/20200618195616-ebuy/</guid>
+      <guid>https://braindump.alexday.me/posts/20200618195616-ebuy/</guid>
       <description>The eBuy system is a system provided by the US Government that allows federal agencies to request quotes for services under Multi-Award contracts and technology contracts (GSA Schedule 70 (IT), Governmentwide Acquisition Contracts (GWACs), and Network Services and Telecommunications)
 The GSA RFQs (Request for Quote, which is a GSA Forms) are posted under a specific GSA Schedule Special Item Number (SIN) category for Multi-Award Schedules or GWAC/Network Services and Telecommunications functional catagories.</description>
     </item>
     
     <item>
       <title>Python Multiprocessing</title>
-      <link>http://braindump.alexday.me/posts/20200618150715-python_multiprocessing/</link>
+      <link>https://braindump.alexday.me/posts/20200618150715-python_multiprocessing/</link>
       <pubDate>Fri, 19 Jun 2020 20:47:13 -0400</pubDate>
       
-      <guid>http://braindump.alexday.me/posts/20200618150715-python_multiprocessing/</guid>
+      <guid>https://braindump.alexday.me/posts/20200618150715-python_multiprocessing/</guid>
       <description>tags Python  Concurrent Futures High level wrapper for async execution of callables. The basic idea is that execution is passed to either threads (with ThreadPoolExecutor) or processes (with ProcessPollExecutor). Both of them expose the same methods and inheret from the abstract Executor class.
 To submit a single fuction for async work:
 from concurrent.futures import ThreadPoolExecutor with ThreadPoolExecutor(max_workers=1) as executor: future = executor.submit(pow, 2, 5) print(future.result()) Can also map a single function over a list of iterables:</description>
@@ -71,19 +71,19 @@ from concurrent.futures import ThreadPoolExecutor with ThreadPoolExecutor(max_wo
     
     <item>
       <title>Python</title>
-      <link>http://braindump.alexday.me/posts/20200618150702-python/</link>
+      <link>https://braindump.alexday.me/posts/20200618150702-python/</link>
       <pubDate>Fri, 19 Jun 2020 20:47:09 -0400</pubDate>
       
-      <guid>http://braindump.alexday.me/posts/20200618150702-python/</guid>
+      <guid>https://braindump.alexday.me/posts/20200618150702-python/</guid>
       <description>Python is a high level, interpreted, duck-typed programming language. Largely popular in the scientific community for the extensive community and its ease of learning and writing.</description>
     </item>
     
     <item>
       <title>GSA Forms</title>
-      <link>http://braindump.alexday.me/posts/20200617135420-gsa_forms/</link>
+      <link>https://braindump.alexday.me/posts/20200617135420-gsa_forms/</link>
       <pubDate>Fri, 19 Jun 2020 20:47:06 -0400</pubDate>
       
-      <guid>http://braindump.alexday.me/posts/20200617135420-gsa_forms/</guid>
+      <guid>https://braindump.alexday.me/posts/20200617135420-gsa_forms/</guid>
       <description>GSA Forms The U.S. General Services Administration maintains an online form repository
 Some of these formas are XFA or AcroForms
 Amendment of Solicitation/Modification of Contract  This file contains the ammendment description and the solicitation number it amends.  </description>
@@ -91,10 +91,10 @@ Amendment of Solicitation/Modification of Contract  This file contains the ammen
     
     <item>
       <title>Front Derailleur</title>
-      <link>http://braindump.alexday.me/posts/20200616223427-front_derailleur/</link>
+      <link>https://braindump.alexday.me/posts/20200616223427-front_derailleur/</link>
       <pubDate>Fri, 19 Jun 2020 20:47:03 -0400</pubDate>
       
-      <guid>http://braindump.alexday.me/posts/20200616223427-front_derailleur/</guid>
+      <guid>https://braindump.alexday.me/posts/20200616223427-front_derailleur/</guid>
       <description>Purpose Used to shift the front gears
 attached with clamp or bracket
 Forms a box around the chain that attaches with a parallelogram to the mounting bracket
@@ -107,10 +107,10 @@ Has H and L limit screws to stop the limits of the travel</description>
     
     <item>
       <title>Text Summarization</title>
-      <link>http://braindump.alexday.me/posts/20200615145456-text_summarization/</link>
+      <link>https://braindump.alexday.me/posts/20200615145456-text_summarization/</link>
       <pubDate>Fri, 19 Jun 2020 20:47:00 -0400</pubDate>
       
-      <guid>http://braindump.alexday.me/posts/20200615145456-text_summarization/</guid>
+      <guid>https://braindump.alexday.me/posts/20200615145456-text_summarization/</guid>
       <description>Introduction Text summarization can be broadly split into two categories:
 Abstractive Produce sentences that represent the document without using sentences from the document. Generate new words and phrases to summarize
 Extractive Extract sentences already present within the document and present the ones that are most representative of the document</description>
@@ -118,10 +118,10 @@ Extractive Extract sentences already present within the document and present the
     
     <item>
       <title>Data Vis Test Note</title>
-      <link>http://braindump.alexday.me/posts/20200618224045-data_vis_test_note/</link>
+      <link>https://braindump.alexday.me/posts/20200618224045-data_vis_test_note/</link>
       <pubDate>Fri, 19 Jun 2020 18:25:50 -0400</pubDate>
       
-      <guid>http://braindump.alexday.me/posts/20200618224045-data_vis_test_note/</guid>
+      <guid>https://braindump.alexday.me/posts/20200618224045-data_vis_test_note/</guid>
       <description></description>
     </item>
     

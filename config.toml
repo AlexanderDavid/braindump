@@ -1,7 +1,8 @@
-baseURL = "https://braindump.alexday.me/"
+baseURL = "https://braindump.alexday.me"
 languageCode = "en-us"
 title = "Alex's Braindump"
 theme = "cortex"
+publishDir = "docs"
 
 [params]
 email = "alexday135@gmail.com"
