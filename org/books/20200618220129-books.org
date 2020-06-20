@@ -1,0 +1,7 @@
+#+TITLE: Books
+
+* Currently Reading
+- [[file:20200615214812-godel_escher_bach.org][Gödel, Escher, Bach]]
+* Would Like to Read
+- [[https://www.amazon.com/dp/B06WVYW33Y?tag=duckduckgo-brave-20&linkCode=osi&th=1&psc=1][Zettelkesten Basics]]
+* Read

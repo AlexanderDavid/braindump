@@ -1,0 +1,11 @@
+#+setupfile:./hugo_setup.org
+#+TITLE: Fall 2020
+#+roam_tags: School
+
+* Classes
+** Data Visualization ~CPSC 6030~
+- [[file:20200618224045-data_vis_test_note.org][Data Vis Test Note]]
+** Computer Security Principles ~CPSC 6200~
+** Artificial Intelligence ~CPSC 6420~
+** Network Science ~CPSC 8480~
+** New PhD Student Seminar ~CPSC 9500~

@@ -1,0 +1,6 @@
+#+setupfile:./hugo_setup.org
+#+title: Test Driven Development
+
+* TDD Cycle
+1. Requirements are turned into very specific test cases
+2. The code is improved so thte test passes

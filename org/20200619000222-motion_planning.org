@@ -1,0 +1,4 @@
+#+setupfile:./hugo_setup.org
+#+title: Motion Planning
+
+[[file:20200618220802-velocity_obstacles.org][Velocity Obstacles]]

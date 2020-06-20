@@ -1,0 +1,5 @@
+#+setupfile:./hugo_setup.org
+#+title: Python
+#+roam_tags: Programming Python
+
+Python is a high level, interpreted, duck-typed programming language. Largely popular in the scientific community for the extensive community and its ease of learning and writing.

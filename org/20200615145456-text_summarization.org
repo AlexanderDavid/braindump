@@ -1,0 +1,11 @@
+#+setupfile:./hugo_setup.org
+#+title: Text Summarization
+#+roam_keys: Summarization
+
+* Introduction
+Text summarization can be broadly split into two categories:
+** Abstractive
+Produce sentences that represent the document without using sentences from the document. Generate new words and phrases to summarize
+** Extractive
+Extract sentences already present within the document and present the ones that are most representative of the document
+
