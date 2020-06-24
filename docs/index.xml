@@ -12,46 +12,72 @@
     
     
     <item>
-      <title>Test Driven Development</title>
-      <link>https://braindump.alexday.me/posts/20200619110811-test_driven_development/</link>
-      <pubDate>Fri, 19 Jun 2020 21:30:49 -0400</pubDate>
+      <title>Motion Planning</title>
+      <link>https://braindump.alexday.me/posts/20200619000222-motion_planning/</link>
+      <pubDate>Tue, 23 Jun 2020 23:25:52 -0400</pubDate>
       
-      <guid>https://braindump.alexday.me/posts/20200619110811-test_driven_development/</guid>
-      <description>TDD Cycle  Requirements are turned into very specific test cases The code is improved so thte test passes  </description>
+      <guid>https://braindump.alexday.me/posts/20200619000222-motion_planning/</guid>
+      <description>Velocity Obstacles
+Testing: CoNFET: an english sentence to emojis translation algorithm
+Links to this page Spaghetti Bolognese Velocity Obstacles  </description>
     </item>
     
     <item>
-      <title>Motion Planning</title>
-      <link>https://braindump.alexday.me/posts/20200619000222-motion_planning/</link>
-      <pubDate>Fri, 19 Jun 2020 21:30:46 -0400</pubDate>
+      <title>Spaghetti Bolognese</title>
+      <link>https://braindump.alexday.me/posts/20200623172109-spaghetti_bolognese/</link>
+      <pubDate>Tue, 23 Jun 2020 23:25:52 -0400</pubDate>
       
-      <guid>https://braindump.alexday.me/posts/20200619000222-motion_planning/</guid>
-      <description>Velocity Obstacles</description>
+      <guid>https://braindump.alexday.me/posts/20200623172109-spaghetti_bolognese/</guid>
+      <description>Serves 3 people
+Motion Planning
+Ingredients  1 Yellow Onion 1 clove garlic 4 whole button mushrooms 1lb lean ground beef 1 jar of marinara pasta sauce Henderson&amp;rsquo;s Relish 6 oz of Spaghetti Salt &amp;amp; Pepper Olive Oil  Process  Finely chop onion Crush the garlic Oil pan on medium heat Add onion and garlic to pan Season pan with salt and pepper Fry the onion until translucent Add meat Fry meat until cooked Add sliced mushrooms Add marinara sauce &amp;amp; a generous glob of Henderson&amp;rsquo;s Simmer on low heat While simmering boil and cook pasta Serve  </description>
+    </item>
+    
+    <item>
+      <title>CoNFET:  an english sentence to emojis translation algorithm</title>
+      <link>https://braindump.alexday.me/posts/day2020confet/</link>
+      <pubDate>Tue, 23 Jun 2020 23:25:51 -0400</pubDate>
+      
+      <guid>https://braindump.alexday.me/posts/day2020confet/</guid>
+      <description> tags Natural Language Processing  keywords :
+CoNFET: an english sentence to emojis translation algorithm This paper details a novel algorithm for the generation of emoji sequences from sentences. The code is available at https://github.com/AlexanderDavid/Sentence-to-Emoji-Translation/
+Links to this page Motion Planning  </description>
+    </item>
+    
+    <item>
+      <title>Research as a Stochastic Decision Process</title>
+      <link>https://braindump.alexday.me/posts/20200622204150-research_as_a_stochastic_decision_process/</link>
+      <pubDate>Tue, 23 Jun 2020 23:25:51 -0400</pubDate>
+      
+      <guid>https://braindump.alexday.me/posts/20200622204150-research_as_a_stochastic_decision_process/</guid>
+      <description>This document details an approach to research (or any project with an uncertain outcome) and specifically what order to attack your actionable items in
+Warm Up It is often that when starting a project you set out with a TODO list of tasks. The order that most people (myself included) perform these tasks in is easiest to hardest.
+However the problem with this is that if you get 80% of the tasks done and then realize that the remaining two tasks are impossible to complete while keeping the system you have to scrap all the work that you have done.</description>
+    </item>
+    
+    <item>
+      <title>Gödel, Escher, Bach</title>
+      <link>https://braindump.alexday.me/posts/20200615214812-godel_escher_bach/</link>
+      <pubDate>Tue, 23 Jun 2020 23:25:50 -0400</pubDate>
+      
+      <guid>https://braindump.alexday.me/posts/20200615214812-godel_escher_bach/</guid>
+      <description>One interesting thing about this book is that each chapter starts with a dialog between the turtle and Achilles from Zeno&amp;rsquo;s paradox.
+Gödel, Escher, Bach is a book about strange loops. Self referential structures that the author supposes that these strange loops are the basis of all consciousness. The author starts this book with an overview of all three Gödel, Escher, and Bach. Then moves onto an introduction to formal languages and how their isomorphism can be real things in the world.</description>
     </item>
     
     <item>
       <title>Fall 2020</title>
       <link>https://braindump.alexday.me/posts/20200618223726-fall_2020/</link>
-      <pubDate>Fri, 19 Jun 2020 21:30:43 -0400</pubDate>
+      <pubDate>Tue, 23 Jun 2020 23:25:49 -0400</pubDate>
       
       <guid>https://braindump.alexday.me/posts/20200618223726-fall_2020/</guid>
-      <description>Classes Data Visualization CPSC 6030  Data Vis Test Note  Computer Security Principles CPSC 6200 Artificial Intelligence CPSC 6420 Network Science CPSC 8480 New PhD Student Seminar CPSC 9500 </description>
-    </item>
-    
-    <item>
-      <title>Velocity Obstacles</title>
-      <link>https://braindump.alexday.me/posts/20200618220802-velocity_obstacles/</link>
-      <pubDate>Fri, 19 Jun 2020 21:30:40 -0400</pubDate>
-      
-      <guid>https://braindump.alexday.me/posts/20200618220802-velocity_obstacles/</guid>
-      <description>tags Motion Planning  Slides From Cartesian to velocity space If you take a Cartesian space where agent A is centered and a point. Then B is at position xb-xa and has a radius of ra+rb (because A is a point and the radius has to be inflated).
-By doing this you calculate the Minkowski sum. The Minkowsi sum is X ⊕ Y = {x + y | x ∈ X, y ∈ Y}.</description>
+      <description>Classes Data Visualization CPSC 6030 Computer Security Principles CPSC 6200 Artificial Intelligence CPSC 6420 Network Science CPSC 8480 New PhD Student Seminar CPSC 9500 </description>
     </item>
     
     <item>
       <title>eBuy</title>
       <link>https://braindump.alexday.me/posts/20200618195616-ebuy/</link>
-      <pubDate>Fri, 19 Jun 2020 21:30:37 -0400</pubDate>
+      <pubDate>Tue, 23 Jun 2020 23:25:48 -0400</pubDate>
       
       <guid>https://braindump.alexday.me/posts/20200618195616-ebuy/</guid>
       <description>The eBuy system is a system provided by the US Government that allows federal agencies to request quotes for services under Multi-Award contracts and technology contracts (GSA Schedule 70 (IT), Governmentwide Acquisition Contracts (GWACs), and Network Services and Telecommunications)
@@ -59,40 +85,32 @@ The GSA RFQs (Request for Quote, which is a GSA Forms) are posted under a specif
     </item>
     
     <item>
-      <title>Python Multiprocessing</title>
-      <link>https://braindump.alexday.me/posts/20200618150715-python_multiprocessing/</link>
-      <pubDate>Fri, 19 Jun 2020 21:30:33 -0400</pubDate>
+      <title>Universal power law governing pedestrian interactions</title>
+      <link>https://braindump.alexday.me/posts/karamouzas2014universal/</link>
+      <pubDate>Tue, 23 Jun 2020 23:25:48 -0400</pubDate>
       
-      <guid>https://braindump.alexday.me/posts/20200618150715-python_multiprocessing/</guid>
-      <description>tags Python  Concurrent Futures High level wrapper for async execution of callables. The basic idea is that execution is passed to either threads (with ThreadPoolExecutor) or processes (with ProcessPollExecutor). Both of them expose the same methods and inheret from the abstract Executor class.
-To submit a single fuction for async work:
-from concurrent.futures import ThreadPoolExecutor with ThreadPoolExecutor(max_workers=1) as executor: future = executor.submit(pow, 2, 5) print(future.result()) Can also map a single function over a list of iterables:</description>
+      <guid>https://braindump.alexday.me/posts/karamouzas2014universal/</guid>
+      <description>tags :
+keywords :
+Universal power law governing pedestrian interactions </description>
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://braindump.alexday.me/posts/20200618150702-python/</link>
-      <pubDate>Fri, 19 Jun 2020 21:30:31 -0400</pubDate>
+      <title>Velocity Obstacles</title>
+      <link>https://braindump.alexday.me/posts/20200618220802-velocity_obstacles/</link>
+      <pubDate>Tue, 23 Jun 2020 23:25:47 -0400</pubDate>
       
-      <guid>https://braindump.alexday.me/posts/20200618150702-python/</guid>
-      <description>Python is a high level, interpreted, duck-typed programming language. Largely popular in the scientific community for the extensive community and its ease of learning and writing.</description>
-    </item>
-    
-    <item>
-      <title>GSA Forms</title>
-      <link>https://braindump.alexday.me/posts/20200617135420-gsa_forms/</link>
-      <pubDate>Fri, 19 Jun 2020 21:30:28 -0400</pubDate>
-      
-      <guid>https://braindump.alexday.me/posts/20200617135420-gsa_forms/</guid>
-      <description>GSA Forms The U.S. General Services Administration maintains an online form repository
-Some of these formas are XFA or AcroForms
-Amendment of Solicitation/Modification of Contract  This file contains the ammendment description and the solicitation number it amends.  </description>
+      <guid>https://braindump.alexday.me/posts/20200618220802-velocity_obstacles/</guid>
+      <description>tags Motion Planning  Velocity Obstacles are a way to determine collision velocities for agents.
+Slides Starting with Cartesian Imagine starting with a Cartesian space where there are two agents, \(A\) and \(B\).
+  Now if you translate this space so that \(A\) is centered at the origin and \(B\) is at position \(x_{b}-x_{a}\).
+  Now if you deflate \(A\) so that it is a single point, then inflate \(B\) so it has a has a radius of \(r_{a}+r_{b}\) (because \(A\) is a point and the radius has to be increased).</description>
     </item>
     
     <item>
       <title>Front Derailleur</title>
       <link>https://braindump.alexday.me/posts/20200616223427-front_derailleur/</link>
-      <pubDate>Fri, 19 Jun 2020 21:30:25 -0400</pubDate>
+      <pubDate>Tue, 23 Jun 2020 23:25:46 -0400</pubDate>
       
       <guid>https://braindump.alexday.me/posts/20200616223427-front_derailleur/</guid>
       <description>Purpose Used to shift the front gears
@@ -106,23 +124,53 @@ Has H and L limit screws to stop the limits of the travel</description>
     </item>
     
     <item>
-      <title>Text Summarization</title>
-      <link>https://braindump.alexday.me/posts/20200615145456-text_summarization/</link>
-      <pubDate>Fri, 19 Jun 2020 21:30:23 -0400</pubDate>
+      <title>GSA Forms</title>
+      <link>https://braindump.alexday.me/posts/20200617135420-gsa_forms/</link>
+      <pubDate>Tue, 23 Jun 2020 23:25:46 -0400</pubDate>
       
-      <guid>https://braindump.alexday.me/posts/20200615145456-text_summarization/</guid>
-      <description>Introduction Text summarization can be broadly split into two categories:
-Abstractive Produce sentences that represent the document without using sentences from the document. Generate new words and phrases to summarize
-Extractive Extract sentences already present within the document and present the ones that are most representative of the document</description>
+      <guid>https://braindump.alexday.me/posts/20200617135420-gsa_forms/</guid>
+      <description>GSA Forms The U.S. General Services Administration maintains an online form repository
+Some of these formas are XFA or AcroForms
+Amendment of Solicitation/Modification of Contract  This file contains the ammendment description and the solicitation number it amends.  Links to this page eBuy  </description>
     </item>
     
     <item>
-      <title>Data Vis Test Note</title>
-      <link>https://braindump.alexday.me/posts/20200618224045-data_vis_test_note/</link>
-      <pubDate>Fri, 19 Jun 2020 18:25:50 -0400</pubDate>
+      <title>Python</title>
+      <link>https://braindump.alexday.me/posts/20200618150702-python/</link>
+      <pubDate>Tue, 23 Jun 2020 23:25:45 -0400</pubDate>
       
-      <guid>https://braindump.alexday.me/posts/20200618224045-data_vis_test_note/</guid>
-      <description></description>
+      <guid>https://braindump.alexday.me/posts/20200618150702-python/</guid>
+      <description>Python is a high level, interpreted, duck-typed programming language. Largely popular in the scientific community for the extensive community and its ease of learning and writing.
+Links to this page Python Multiprocessing  </description>
+    </item>
+    
+    <item>
+      <title>Test Driven Development</title>
+      <link>https://braindump.alexday.me/posts/20200619110811-test_driven_development/</link>
+      <pubDate>Tue, 23 Jun 2020 23:25:45 -0400</pubDate>
+      
+      <guid>https://braindump.alexday.me/posts/20200619110811-test_driven_development/</guid>
+      <description>TDD Cycle  Requirements are turned into very specific test cases The code is improved so thte test passes  </description>
+    </item>
+    
+    <item>
+      <title>Books</title>
+      <link>https://braindump.alexday.me/posts/20200618220129-books/</link>
+      <pubDate>Tue, 23 Jun 2020 23:25:44 -0400</pubDate>
+      
+      <guid>https://braindump.alexday.me/posts/20200618220129-books/</guid>
+      <description>Currently Reading  Gödel, Escher, Bach  Would Like to Read  Zettelkesten Basics  Read </description>
+    </item>
+    
+    <item>
+      <title>Python Multiprocessing</title>
+      <link>https://braindump.alexday.me/posts/20200618150715-python_multiprocessing/</link>
+      <pubDate>Tue, 23 Jun 2020 23:25:44 -0400</pubDate>
+      
+      <guid>https://braindump.alexday.me/posts/20200618150715-python_multiprocessing/</guid>
+      <description>tags Python  Concurrent Futures High level wrapper for async execution of callables. The basic idea is that execution is passed to either threads (with ThreadPoolExecutor) or processes (with ProcessPollExecutor). Both of them expose the same methods and inheret from the abstract Executor class.
+To submit a single fuction for async work:
+from concurrent.futures import ThreadPoolExecutor with ThreadPoolExecutor(max_workers=1) as executor: future = executor.submit(pow, 2, 5) print(future.result()) Can also map a single function over a list of iterables:</description>
     </item>
     
   </channel>

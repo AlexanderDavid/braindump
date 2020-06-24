@@ -1,0 +1,47 @@
+<html>  
+<head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://braindump.alexday.me/css/embed.min.43ffb24d6d58dc9382bd6ecf153b39e321fbfcbec334d4d3aacc42336b79fe2c.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <main>
+      <section id="title">
+        <h1>Research as a Stochastic Decision Process</h1>
+      </section>
+      <section id="content">
+        <p>This document details an approach to research (or any project with an uncertain outcome) and specifically what order to attack your actionable items in</p>
+<h2 id="warm-up">Warm Up</h2>
+<p>It is often that when starting a project you set out with a TODO list of tasks. The order that most people (myself included) perform these tasks in is easiest to hardest.</p>
+<p>However the problem with this is that if you get 80% of the tasks done and then realize that the remaining two tasks are impossible to complete while keeping the system you have to scrap all the work that you have done.</p>
+<p>The author postulates that tasks should be prioritized by their likelihood to fail (larger likelihoods first) and based on the time they will take (shorter tasks first)</p>
+<h2 id="a-better-strategy-sorting-by-information-rate">A Better Strategy: Sorting by Information Rate</h2>
+<p>A more formal strategy is to do tasks by sorting them based on most informative by unit time. The author lays out two strategies for measuring informativeness.</p>
+<ol>
+<li>
+<p>Expected Time Saved
+Higher &ldquo;informative&rdquo; tasks give a higher amount of time saved if they fail.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">    Situation: All steps of a project take equal time to complete and have an 80% success rate
+
+    Task Order: Do the shortest tasks first. This means that if a task fails then all the longer tasks haven&#39;t been done yet and the time is saved.
+</code></pre></div></li>
+</ol>
+<!--listend-->
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">    Situation: Task 1 (90% success, 30 minutes), Task 2 (40% success and 4 hours)
+
+    Do easy task first. If it failes we save 240 minutes. (10% * 240 = 24 minutes saved). If we did the opposite and did the hard task first we save 30 minutes or (60% * 30 minutes) 18 minutes
+</code></pre></div><p>This method is bad however because it is \(O(n) = n!\).</p>
+<ol>
+<li>Failure Rate</li>
+</ol>
+
+      </section>
+    </main>
+    <script type="text/javascript">
+      window.MathJax.typeset();
+    </script>
+</body>
+</html>

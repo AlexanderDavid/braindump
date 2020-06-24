@@ -3,63 +3,83 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://braindump.alexday.me/posts/</loc>
-    <lastmod>2020-06-19T21:30:49-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://braindump.alexday.me/posts/20200619110811-test_driven_development/</loc>
-    <lastmod>2020-06-19T21:30:49-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://braindump.alexday.me/posts/20200619000222-motion_planning/</loc>
-    <lastmod>2020-06-19T21:30:46-04:00</lastmod>
+    <lastmod>2020-06-23T23:25:52-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://braindump.alexday.me/posts/</loc>
+    <lastmod>2020-06-23T23:25:52-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://braindump.alexday.me/posts/20200623172109-spaghetti_bolognese/</loc>
+    <lastmod>2020-06-23T23:25:52-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://braindump.alexday.me/posts/day2020confet/</loc>
+    <lastmod>2020-06-23T23:25:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://braindump.alexday.me/posts/20200622204150-research_as_a_stochastic_decision_process/</loc>
+    <lastmod>2020-06-23T23:25:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://braindump.alexday.me/posts/20200615214812-godel_escher_bach/</loc>
+    <lastmod>2020-06-23T23:25:50-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://braindump.alexday.me/posts/20200618223726-fall_2020/</loc>
-    <lastmod>2020-06-19T21:30:43-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://braindump.alexday.me/posts/20200618220802-velocity_obstacles/</loc>
-    <lastmod>2020-06-19T21:30:40-04:00</lastmod>
+    <lastmod>2020-06-23T23:25:49-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://braindump.alexday.me/posts/20200618195616-ebuy/</loc>
-    <lastmod>2020-06-19T21:30:37-04:00</lastmod>
+    <lastmod>2020-06-23T23:25:48-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://braindump.alexday.me/posts/20200618150715-python_multiprocessing/</loc>
-    <lastmod>2020-06-19T21:30:33-04:00</lastmod>
+    <loc>https://braindump.alexday.me/posts/karamouzas2014universal/</loc>
+    <lastmod>2020-06-23T23:25:48-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://braindump.alexday.me/posts/20200618150702-python/</loc>
-    <lastmod>2020-06-19T21:30:31-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://braindump.alexday.me/posts/20200617135420-gsa_forms/</loc>
-    <lastmod>2020-06-19T21:30:28-04:00</lastmod>
+    <loc>https://braindump.alexday.me/posts/20200618220802-velocity_obstacles/</loc>
+    <lastmod>2020-06-23T23:25:47-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://braindump.alexday.me/posts/20200616223427-front_derailleur/</loc>
-    <lastmod>2020-06-19T21:30:25-04:00</lastmod>
+    <lastmod>2020-06-23T23:25:46-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://braindump.alexday.me/posts/20200615145456-text_summarization/</loc>
-    <lastmod>2020-06-19T21:30:23-04:00</lastmod>
+    <loc>https://braindump.alexday.me/posts/20200617135420-gsa_forms/</loc>
+    <lastmod>2020-06-23T23:25:46-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://braindump.alexday.me/posts/20200618224045-data_vis_test_note/</loc>
-    <lastmod>2020-06-19T18:25:50-04:00</lastmod>
+    <loc>https://braindump.alexday.me/posts/20200618150702-python/</loc>
+    <lastmod>2020-06-23T23:25:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://braindump.alexday.me/posts/20200619110811-test_driven_development/</loc>
+    <lastmod>2020-06-23T23:25:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://braindump.alexday.me/posts/20200618220129-books/</loc>
+    <lastmod>2020-06-23T23:25:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://braindump.alexday.me/posts/20200618150715-python_multiprocessing/</loc>
+    <lastmod>2020-06-23T23:25:44-04:00</lastmod>
   </url>
   
   <url>
