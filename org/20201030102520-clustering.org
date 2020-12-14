@@ -1,0 +1,17 @@
+#+setupfile:./hugo_setup.org
+#+title: Clustering
+#+ROAM_TAGS: "Network Science"
+
+- tags :: [[file:20200825162306-network_science.org][Network Science]]
+
+- A triangle is a complete subgraph of $G$ with 3 vertices
+- $\lambda(G)$ is the number of traingles in $G$
+- $\lambda(v)$ is defined accordingly $\lambda(G) = \frac{1}{3} \Sigma_{v}\lambda(v)$
+- A truple is a subgraph of $G$ with 3 nodes and 2 edges
+- A truple is a triple at v if v is incident with both edges
+- [[file:images/2020-10-01_09-49-48_screenshot.png]]
+- We define clustering coefficient as $c(v) = \frac{\lambda(v)}{\tau(v)}$
+- Given $V'={v \in V | d(v) >= 2}$ we define the clustering coefficient of $G$ as:
+  + [[file:images/2020-10-01_09-52-19_screenshot.png]]
+- Transivity of $G$ is defined as:
+  + [[file:images/2020-10-01_09-52-56_screenshot.png]]

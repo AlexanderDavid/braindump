@@ -1,7 +1,0 @@
-#+setupfile:./hugo_setup.org
-#+title: Lsof
-
-- tags :: [[file:unix.org][Unix]]
-
-* Links
-[[https://medium.com/@copyconstruct/lsof-f2b224eee7b5][lsof - Cindy Sridharan - Medium]]

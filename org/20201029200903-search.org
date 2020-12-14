@@ -1,0 +1,93 @@
+#+setupfile:./hugo_setup.org
+#+title: Search
+#+ROAM_TAGS: AI
+
+- tags :: [[file:20200903164633-artificial_intelligence.org][Artificial Intelligence]]
+
+* Uninformed Search
+** Breadth First Search
+- Expand shallowest node first
+- Frontier is a FIFO queue
+
+** Depth First Search
+- Always expand the deepest node first
+- Frontier is a LIFO queue (stack)
+
+** Iterative Deepening
+- Run DFS with depth limit 1
+- Run DFS with depth limit 2
+- Run DFS with depth limit ...
+- DFS space complexity with BFS time complexity
+
+** Uniform Cost Search
+- Expand least-cost node first
+- Frontier is a priority queue
+- Issues
+  - Explores in all directions
+  - No goal-oriented expansion
+
+** Search Algorithm Evaluation
+- Completeness - Does this always find a solution if one exists
+- Optimal - Find the least cost solution
+- Time complexity - Time taken
+- Space complexity - Space needed
+- Useful quantities
+  - $b$ - branching factor of the tree (average number of successors for any node)
+  - $m$ - Maximum depth of the state space (meaning there are at max $b^m$ nodes)
+  - $d$ - Depth of the shallowest goal node
+    [[file:images/2020-09-03_16-49-29_screenshot.png]]
+*** BFS Properties
+  - Time complexity $\approx O(b^d)$
+  - Space complexity $\approx O(b^d)$
+  - It is complete (if $d$ is finite)
+  - It is optimal only if step costs are equal or increasing as we move down the tree
+  - BFS requires a crazy amount of memory and time
+*** DFS Properties
+  - It is complete if $m$ is finite and the graph is acyclic
+  - Not optimal
+  - Time complexity $O(b^m)$ if $m \ne \infty$ and terrible if $m >> d$
+  - Space complexity $O(bm)$
+*** UCS properties
+  - It is optimal
+  - It is complete if the cost of every action is at least $\epsilon > 0$
+  - Time
+    - If $C^*$ is the optimal cost the effective depth is $\frac{C^*}{\epsilon}$
+    - It takes $O(b^{\frac{C^*}{\epsilon}})$ time and space
+* Informed Search
+:PROPERTIES:
+:ID:       0e38b579-1e5c-4cca-b298-5b368ecf68d0
+:END:
+- *Informed Search Methods* use problem specific knowledge to solve a problem better
+- *Idea*: Use an /evaluation/ function $f(n)$ for each node $n$
+    - Estimate "desirability" of each node
+- Open is a priority queue sorted by increasing $f$-cost
+
+** Search Heuristic
+- A heuristic function $h(n)$
+  - Estimates how close the state at node $n$ is to the goal state
+  - Designed for a particular search problem
+  - Common heuristics: Manhattan distance, Euclidean distance, etc.
+
+** Greedy Search
+- Expand the node that appears to be closest to the goal at each step
+- $f(n)=h(n)$
+- Complete
+- Not Optimal
+- Time - $O(b^m)$
+- Space - $O(b^m)$
+
+** A*
+- Guide the search while avoid expanding expensive paths
+- Evaluation function $f(n)  = g(n) + h(n)$
+- Admissible heuristics
+  - Never overestimate true cost of the goal
+- Consistent heuristics
+  - $h(n) <= c(n, a, n')+h(n')$
+  - Where $c$ is a step cost function
+  - All consistent heuristics are admissible
+- Most of the work in A* lies on finding admissible heuristics
+  - We can often find these by solving a /relaxed/ version of the problem
+    - The *key* idea is the optimal solution cost of the relaxed problem is no greater than the optimal solution cost of the real problem
+- Given two heuristics $h_1$ and $h_2$ if $h_{2}(n) >= h_{1}(n) \forall n$ then $h_2$ *dominates* $h_1$ and is better for search
+- Given $m$ admissible heuristics $h_1, h_2, \dots, h_3$ then $h(n) = max(h_1(n), h_2(n), \dots, h_n(n))$ is also admissable and dominates any $h_i$
+- A* has extensions that allow incremental, anytime, and pruning approahces

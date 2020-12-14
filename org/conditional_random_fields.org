@@ -1,3 +1,0 @@
-#+setupfile:./hugo_setup.org
-#+hugo_slug: conditional_random_fields
-#+title: Conditional Random Fields

@@ -1,8 +1,0 @@
-#+setupfile:./hugo_setup.org
-#+roam_key: https://superorganizers.substack.com/p/how-to-build-a-learning-machine###
-#+hugo_slug: how_to_make_yourself_into_a_learning_machine_superorganizers
-#+title: How to Make Yourself Into a Learning Machine - Superorganizers
-
-- source ::
-  https://superorganizers.substack.com/p/how-to-build-a-learning-machine
-- tags :: [[file:../spaced_repetition.org][Spaced Repetition]]

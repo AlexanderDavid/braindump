@@ -1,0 +1,32 @@
+#+setupfile:./hugo_setup.org
+#+title: Network Generation Algorithms
+#+ROAM_TAGS: "Network Science"
+
+- tags :: [[file:20200825162306-network_science.org][Network Science]]
+
+- Method of generation for specific networks
+- Used to test metrics and evaluate if they apply to multiple types of networks
+* Price Model
+- Modelled citations
+- New nodes randomly attach to nodes with a prob proportional to the number of citations the paper already had
+- A new paper needs a random non-zero chance of getting cited
+* Barabasi-Albert
+- Similar to price model but undirected
+- Can have non-linear preferential attachment
+* Vertex Copying Model
+- Same as Price but we copy one of the existing nodes and part of its citations
+* Network Optimization
+- Some networks are optimized over time
+- Minimize shortest path or other prefered metric
+* Small World Model
+- Aims to maximize clustering
+- Adding shortcuts to circle model
+** Watts-Strogatz
+- Given circle model
+- Remove Edge
+- Add new randomly uniform
+* R-Mat Generator
+- Generate empty adjacency matrix of a graph and then recursively split into segments (based on assigned probabilities)
+- When some final cell is chosen place an edge between two nodes
+- We can add community "clusters" by increasing the probability
+ [[file:images/2020-10-15_10-01-19_screenshot.png]] bs

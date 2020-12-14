@@ -1,7 +1,7 @@
 +++
 title = "Text Summarization"
 author = ["Alex Day"]
-lastmod = 2020-06-19T20:47:00-04:00
+lastmod = 2020-12-13T20:15:22-05:00
 draft = false
 +++
 
@@ -9,9 +9,11 @@ draft = false
 
 Text summarization can be broadly split into two categories:
 
+
 ### Abstractive {#abstractive}
 
 Produce sentences that represent the document without using sentences from the document. Generate new words and phrases to summarize
+
 
 ### Extractive {#extractive}
 

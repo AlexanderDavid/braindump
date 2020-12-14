@@ -1,4 +1,0 @@
-#+setupfile:./hugo_setup.org
-#+title: Neural Network Optimizer
-
-- tags :: [[file:machine_learning_algorithms.org][Machine Learning Algorithms]]

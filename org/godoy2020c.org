@@ -1,0 +1,17 @@
+#+setupfile:./hugo_setup.org
+#+TITLE: C-nav: distributed coordination in crowded multi-agent navigation
+#+ROAM_KEY: cite:godoy2020c
+#+ROAM_TAGS: Papers "Collision Avoidance" Robotics
+
+* TODO Notes
+:PROPERTIES:
+:Custom_ID: godoy2020c
+:NOTER_DOCUMENT: /home/alex/Dropbox/notes/papers/godoy2020c.pdf
+:AUTHOR: Godoy, J. et al.
+:JOURNAL: 
+:DATE: 
+:YEAR: 2020
+:DOI: 
+:URL: 
+:END:
+

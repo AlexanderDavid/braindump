@@ -1,0 +1,44 @@
+#+setupfile:./hugo_setup.org
+#+TITLE: Botornot: a system to evaluate social bots
+#+ROAM_KEY: cite:davis2016botornot
+#+ROAM_TAGS: Paper
+
+- tags :: Network Science Final
+
+*  Notes
+:PROPERTIES:
+:Custom_ID: davis2016botornot
+:NOTER_DOCUMENT: /home/alex/Dropbox/notes/papers/davis2016botornot.pdf
+:AUTHOR: Davis, C. A. et al.
+:JOURNAL:
+:DATE:
+:YEAR: 2016
+:DOI:
+:URL:
+:ID:       83ca7156-c317-4c1e-bdec-598ba1324475
+:END:
+- Introduces BotOrNot service, an API to discover twitter bots
+- Uses the following features (high level):
+  + Retweet, mention, hashtag-co-occurance networks
+    - Degree distribution
+    - Clustering coefficient
+    - Centrality metrics
+  + User features
+    - Account creation
+    - Language
+    - Geographic locations
+  + Friends
+    - Median, moments, and entropy of the distributions of the number of followers, followees, posts, etc.
+  + Temporal
+    - Timing patterns
+    - Tweet rate
+    - Inter-tweet time distribution
+  + Content
+    - Linguistic queues and POS tagging
+  + Sentiment
+    - Happiness
+    - Arousal-dominance-valence
+    - Emoji scores
+- 200 most recent tweets and up to 100 most recent tweets mentioning them
+- Random Forest classifiers
+  + Seven different classifiers, one for each feature

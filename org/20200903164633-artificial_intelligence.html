@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-09-03 Thu 17:12 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Artificial Intelligence</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Alex Day" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.cacheClassElem = elem.className;
+         elem.cacheClassTarget = target.className;
+         target.className = "code-highlighted";
+         elem.className   = "code-highlighted";
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(elem.cacheClassElem)
+         elem.className = elem.cacheClassElem;
+       if(elem.cacheClassTarget)
+         target.className = elem.cacheClassTarget;
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Artificial Intelligence</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgb2404b8">1. AI Basics (Lec 1, 2)</a>
+<ul>
+<li><a href="#org6d98853">1.1. Agents</a></li>
+<li><a href="#orgc16f704">1.2. Searching</a></li>
+<li><a href="#org7c8a2fd">1.3. State Space Graphs vs Search Trees</a></li>
+</ul>
+</li>
+<li><a href="#org7690b13">2. Uninformed Search (Lec 3)</a>
+<ul>
+<li><a href="#org2b98baa">2.1. Breadth First Search</a></li>
+<li><a href="#org95e9499">2.2. Depth First Search</a></li>
+<li><a href="#orgda7f86f">2.3. Iterative Deepening</a></li>
+<li><a href="#org9530105">2.4. Uniform Cost Search</a></li>
+<li><a href="#orgd5057dc">2.5. Search Algorithm Evaluation</a>
+<ul>
+<li><a href="#org4eff5b9">2.5.1. BFS Properties</a></li>
+<li><a href="#orgca7ea23">2.5.2. DFS Properties</a></li>
+<li><a href="#orgf39fffb">2.5.3. UCS properties</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgc93c47a">3. Informed Search (Lec 4 &amp; 5)</a>
+<ul>
+<li><a href="#org18bbb58">3.1. Search Heuristic</a></li>
+<li><a href="#orgffaaabc">3.2. Greedy Search</a></li>
+<li><a href="#orge20ab5a">3.3. A*</a></li>
+</ul>
+</li>
+<li><a href="#org8649d9a">4. Something Search</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb2404b8" class="outline-2">
+<h2 id="orgb2404b8"><span class="section-number-2">1</span> AI Basics (Lec 1, 2)</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org6d98853" class="outline-3">
+<h3 id="org6d98853"><span class="section-number-3">1.1</span> Agents</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>An <b>agent</b> is an entity that perceives and acts</li>
+<li>A <b>rational agent</b> selects actions that achieve the best (expected) outcome</li>
+<li><b>Reflex agents</b> consider how the world is but do <b><b>not</b></b> consider future consequences of their actions
+<ul class="org-ul">
+<li>Can sometimes be rational, although not always</li>
+</ul></li>
+<li><b>Planning agents</b> consider how the world would be based upon their actions and have some goal
+<ul class="org-ul">
+<li>Decisions are based on hypothesized consequences of actions</li>
+<li>Not always the <b><b>best</b></b> action so they&rsquo;re note always rational</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc16f704" class="outline-3">
+<h3 id="orgc16f704"><span class="section-number-3">1.2</span> Searching</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>In a Discrete Search Problem we are given:
+<ul class="org-ul">
+<li>A finite state space</li>
+<li>A finite action space</li>
+<li>A cost function
+<ul class="org-ul">
+<li>\(Cost=C(Action, State, FutureState)\)</li>
+<li>The cost of an action is defined as the cost of moving from a state to some future state through that action</li>
+</ul></li>
+<li>A transition model
+<ul class="org-ul">
+<li>\(FutureState=Transition(Action, CurrentState)\)</li>
+</ul></li>
+<li>Start state and a goal state or goal test</li>
+<li>We seek to find a minimum cost solution solution: a sequence of actions that lead from the start to the goal</li>
+<li>We assume the cost of the solution is equal to the sum of the cost of each step</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7c8a2fd" class="outline-3">
+<h3 id="org7c8a2fd"><span class="section-number-3">1.3</span> State Space Graphs vs Search Trees</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>State Space Graphs
+<ul class="org-ul">
+<li>The state space forms a directed graph where the nodes are states and the edges are actions</li>
+<li>Each state occurs only once</li>
+<li>Goal test is a set of nodes</li>
+<li>Rarely can build it in memory</li>
+</ul></li>
+<li>Search Trees
+<ul class="org-ul">
+<li>Root has the start state</li>
+<li>Branches are actions</li>
+<li>The nodes show states but correspond to local PLANS</li>
+<li>Search trees can be expanded until the solution is found
+<ul class="org-ul">
+<li>Leaf nodes are called the frontier or the open list</li>
+<li>Leaf nodes are nodes that have unexplored options</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7690b13" class="outline-2">
+<h2 id="org7690b13"><span class="section-number-2">2</span> Uninformed Search (Lec 3)</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org2b98baa" class="outline-3">
+<h3 id="org2b98baa"><span class="section-number-3">2.1</span> Breadth First Search</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>Expand shallowest node first</li>
+<li>Frontier is a FIFO queue</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org95e9499" class="outline-3">
+<h3 id="org95e9499"><span class="section-number-3">2.2</span> Depth First Search</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>Always expand the deepest node first</li>
+<li>Frontier is a LIFO queue (stack)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgda7f86f" class="outline-3">
+<h3 id="orgda7f86f"><span class="section-number-3">2.3</span> Iterative Deepening</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>Run DFS with depth limit 1</li>
+<li>Run DFS with depth limit 2</li>
+<li>Run DFS with depth limit &#x2026;</li>
+<li>DFS space complexity with BFS time complexity</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9530105" class="outline-3">
+<h3 id="org9530105"><span class="section-number-3">2.4</span> Uniform Cost Search</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>Expand least-cost node first</li>
+<li>Frontier is a priority queue</li>
+<li>Issues
+<ul class="org-ul">
+<li>Explores in all directions</li>
+<li>No goal-oriented expansion</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd5057dc" class="outline-3">
+<h3 id="orgd5057dc"><span class="section-number-3">2.5</span> Search Algorithm Evaluation</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>Completeness - Does this always find a solution if one exists</li>
+<li>Optimal - Find the least cost solution</li>
+<li>Time complexity - Time taken</li>
+<li>Space complexity - Space needed</li>
+<li>Useful quantities
+<ul class="org-ul">
+<li>\(b\) - branching factor of the tree (average number of successors for any node)</li>
+<li>\(m\) - Maximum depth of the state space (meaning there are at max \(b^m\) nodes)</li>
+<li>\(d\) - Depth of the shallowest goal node
+<img src="images/2020-09-03_16-49-29_screenshot.png" alt="2020-09-03_16-49-29_screenshot.png" /></li>
+</ul></li>
+</ul>
+</div>
+<div id="outline-container-org4eff5b9" class="outline-4">
+<h4 id="org4eff5b9"><span class="section-number-4">2.5.1</span> BFS Properties</h4>
+<div class="outline-text-4" id="text-2-5-1">
+<ul class="org-ul">
+<li>Time complexity \(\approx O(b^d)\)</li>
+<li>Space complexity \(\approx O(b^d)\)</li>
+<li>It is complete (if \(d\) is finite)</li>
+<li>It is optimal only if step costs are equal or increasing as we move down the tree</li>
+<li>BFS requires a crazy amount of memory and time</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgca7ea23" class="outline-4">
+<h4 id="orgca7ea23"><span class="section-number-4">2.5.2</span> DFS Properties</h4>
+<div class="outline-text-4" id="text-2-5-2">
+<ul class="org-ul">
+<li>It is complete if \(m\) is finite and the graph is acyclic</li>
+<li>Not optimal</li>
+<li>Time complexity \(O(b^m)\) if \(m \ne \infty\) and terrible if \(m >> d\)</li>
+<li>Space complexity \(O(bm)\)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf39fffb" class="outline-4">
+<h4 id="orgf39fffb"><span class="section-number-4">2.5.3</span> UCS properties</h4>
+<div class="outline-text-4" id="text-2-5-3">
+<ul class="org-ul">
+<li>It is optimal</li>
+<li>It is complete if the cost of every action is at least \(\epsilon > 0\)</li>
+<li>Time
+<ul class="org-ul">
+<li>If \(C^*\) is the optimal cost the effective depth is \(\frac{C^*}{\epsilon}\)</li>
+<li>It takes \(O(b^{\frac{C^*}{\epsilon}})\) time and space</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc93c47a" class="outline-2">
+<h2 id="orgc93c47a"><span class="section-number-2">3</span> Informed Search (Lec 4 &amp; 5)</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li><b>Informed Search Methods</b> use problem specific knowledge to solve a problem better</li>
+<li><b>Idea</b>: Use an <i>evaluation</i> function \(f(n)\) for each node \(n\)
+<ul class="org-ul">
+<li>Estimate &ldquo;desirability&rdquo; of each node</li>
+</ul></li>
+<li>Open is a priority queue sorted by increasing $f$-cost</li>
+</ul>
+</div>
+
+<div id="outline-container-org18bbb58" class="outline-3">
+<h3 id="org18bbb58"><span class="section-number-3">3.1</span> Search Heuristic</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>A heuristic function \(h(n)\)
+<ul class="org-ul">
+<li>Estimates how close the state at node \(n\) is to the goal state</li>
+<li>Designed for a particular search problem</li>
+<li>Common heuristics: Manhattan distance, Euclidean distance, etc.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgffaaabc" class="outline-3">
+<h3 id="orgffaaabc"><span class="section-number-3">3.2</span> Greedy Search</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>Expand the node that appears to be closest to the goal at each step</li>
+<li>\(f(n)=h(n)\)</li>
+<li>Complete</li>
+<li>Not Optimal</li>
+<li>Time - \(O(b^m)\)</li>
+<li>Space - \(O(b^m)\)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge20ab5a" class="outline-3">
+<h3 id="orge20ab5a"><span class="section-number-3">3.3</span> A*</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>Guide the search while avoid expanding expensive paths</li>
+<li>Eval function \(f(n)  = g(n) + h(n)\)</li>
+<li>Admissible heuristics
+<ul class="org-ul">
+<li>Never overestimate true cost of the goal</li>
+</ul></li>
+<li>Consistent heuristics
+<ul class="org-ul">
+<li>\(h(n) <= c(n, a, n')+h(n')\)</li>
+<li>Where \(c\) is a step cost function</li>
+<li>All consistent heuristics are admissable</li>
+</ul></li>
+<li>Most of the work in A* lies on finding admissable heuristics
+<ul class="org-ul">
+<li>We can often find these by solving a <i>relaxed</i> version of the problem
+<ul class="org-ul">
+<li>The <b>key</b> idea is the optimal solution cost of the relaxed problem is no greater than the optimal solution cost of the real problem</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8649d9a" class="outline-2">
+<h2 id="org8649d9a"><span class="section-number-2">4</span> Something Search</h2>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Alex Day</p>
+<p class="date">Created: 2020-09-03 Thu 17:12</p>
+</div>
+</body>
+</html>

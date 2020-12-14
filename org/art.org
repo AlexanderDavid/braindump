@@ -1,6 +1,0 @@
-#+setupfile:./hugo_setup.org
-#+title: Art
-
-* Resources
-- [[https://artres.xyz/][Art Resources and Tutorials]]
-- [[https://drawabox.com/][Drawabox]]

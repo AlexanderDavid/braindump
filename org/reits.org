@@ -1,6 +1,0 @@
-#+setupfile:./hugo_setup.org
-#+hugo_slug: reits
-#+roam_alias: REITs
-#+title: Real Estate Investment Trusts
-
-REITs are companies that own and collect rent from commercial and residential properties.

@@ -1,6 +1,0 @@
-#+setupfile:./hugo_setup.org
-#+title: Nat Eliason
-
-Active user of [[file:roam_research.org][Roam Research]]
-
-- socials :: [[https://www.nateliason.com/][website]], [[https://twitter.com/nateliason][twitter]]

@@ -1,0 +1,7 @@
+#+setupfile:./hugo_setup.org
+#+title: Google Office Hours
+
+* Questions
+- How to make the Lead GTA sound better
+- Project instead of awards?
+-

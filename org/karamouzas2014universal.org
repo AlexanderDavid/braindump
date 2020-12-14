@@ -1,0 +1,16 @@
+#+setupfile:./hugo_setup.org
+#+TITLE: Universal power law governing pedestrian interactions
+#+ROAM_KEY: cite:karamouzas2014universal
+#+ROAM_TAGS: Paper "Collision Avoidance"
+
+- tags ::
+- keywords ::
+
+* [[/home/alex/Dropbox/notes/papers/karamouzas2014universal.pdf][Universal power law governing pedestrian interactions]]
+  :PROPERTIES:
+  :Custom_ID: karamouzas2014universal
+  :URL:
+  :AUTHOR: Karamouzas, I., Skinner, B., & Guy, S. J.
+  :NOTER_DOCUMENT: /home/alex/Dropbox/notes/papers/karamouzas2014universal.pdf
+  :NOTER_PAGE:
+  :END:

@@ -1,3 +1,0 @@
-#+setupfile:./hugo_setup.org
-#+hugo_slug: web_framework
-#+title: Web Framework

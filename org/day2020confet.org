@@ -1,0 +1,18 @@
+#+setupfile:./hugo_setup.org
+#+TITLE: CoNFET:  an english sentence to emojis translation algorithm
+#+ROAM_KEY: cite:day2020confet
+#+bibliograpy: papers/references.bib
+#+ROAM_TAGS: Paper "Machine Translation"
+
+- tags :: Natural Language Processing
+- keywords :: Emojis
+
+* [[/home/alex/Dropbox/notes/papers/day2020confet.pdf][CoNFET:  an english sentence to emojis translation algorithm]]
+  :PROPERTIES:
+  :Custom_ID: day2020confet
+  :URL:
+  :AUTHOR: Day, A., Mankos, C., Kim, S., & Strausser, J.
+  :NOTER_DOCUMENT: /home/alex/Dropbox/notes/papers/day2020confet.pdf
+  :NOTER_PAGE:
+  :END:
+This paper details a novel algorithm for the generation of emoji sequences from sentences. The code is available at [[https://github.com/AlexanderDavid/Sentence-to-Emoji-Translation/]]

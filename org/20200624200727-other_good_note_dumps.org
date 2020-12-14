@@ -1,0 +1,6 @@
+#+setupfile:./hugo_setup.org
+#+title: Other Good Note Dumps
+
+- [[https://notes.azlen.me/g3tibyfv/][Azlen]]
+- [[notes.andymatuschak.org][Andy Matuschak]]
+- [[notes.mxstbr.com][Mxstbr]]

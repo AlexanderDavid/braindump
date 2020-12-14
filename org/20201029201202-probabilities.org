@@ -1,0 +1,12 @@
+#+setupfile:./hugo_setup.org
+#+title: Probabilities
+#+ROAM_TAGS: AI Probabilities
+
+- A random variable $X$, represents an event whose outcome is unknown
+- $P$ is a probability distribution that assigns weight to outcomes
+  - $X=$ weather tomorrow
+  - $X \in \{sunshine, rain, thunder\}$
+  - $P(X=sunshine)=0.5$, $P(X=rain) = 0.25$, $P(X=thunder) = 0.25$
+- Probabilities are non-neg and sum to one
+- As we get more evidence the probabilities may change
+- The *expected value*, $E$, of a function of a random variable is the average, weighted by the probability distribution over outcomes

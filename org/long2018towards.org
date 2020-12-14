@@ -1,0 +1,26 @@
+#+setupfile:./hugo_setup.org
+#+TITLE: Towards optimally decentralized multi-robot collision avoidance via deep reinforcement learning
+#+ROAM_KEY: cite:long2018towards
+#+ROAM_TAGS: Papers "Collision Avoidance" Robotics
+
+* TODO Notes
+:PROPERTIES:
+:Custom_ID: long2018towards
+:NOTER_DOCUMENT: /home/alex/Dropbox/notes/papers/long2018towards.pdf
+:AUTHOR: Long, P. et al.
+:JOURNAL: 
+:DATE: 
+:YEAR: 2018
+:DOI: 
+:URL: 
+:END:
+** Testing
+- Circle Scenarios
+  - Uniform cirle distribution
+- Random Scenarios
+  + 5 scenarios
+  + 15 agents per scenario
+- Group Scenarios
+  + Group swap :: 2 groups of 6 robots aim to swap their position
+  + Group crossing :: Robots in two groups intersecting in the center
+  + Corridor :: Group crossing in a narrow corridor with two obsticles

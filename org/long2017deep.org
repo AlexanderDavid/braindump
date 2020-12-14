@@ -1,0 +1,27 @@
+#+setupfile:./hugo_setup.org
+#+TITLE: Deep-learned collision avoidance policy for distributed multiagent navigation
+#+ROAM_KEY: cite:long2017deep
+#+ROAM_TAGS: Papers "Collision Avoidance" Robotics
+
+* TODO Notes
+:PROPERTIES:
+:Custom_ID: long2017deep
+:NOTER_DOCUMENT: /home/alex/Dropbox/notes/papers/long2017deep.pdf
+:AUTHOR: Long, P. et al.
+:JOURNAL: 
+:DATE: 
+:YEAR: 2017
+:DOI: 
+:URL: 
+:END:
+** Testing
+*** Scenarios
+- Crossing ::  agents  are  separated  in  two  groups,  and  theirpath will intersect in the bottom left corner;
+- Circle :: agents are initially located along a circle and eachagent’s goal is to reach its antipodal position;
+- Swap :: two groups of agents moving in opposite directionsswap their positions;
+- Random :: agents  are  randomly  initialized  in  a  clutteredenvironment and are assigned random goals;
+- 3 Obstacles :: six agents move across three obstacles;
+- 1  Obstacle ::  four  agents  initialized  on  a  circle  movetowards  their  antipodal  positions,  and  an  obstacle  islocated at the center.
+
+[[file:images/2020-11-16_10-43-48_screenshot.png]]
+

@@ -1,7 +1,7 @@
 +++
 title = "Front Derailleur"
 author = ["Alex Day"]
-lastmod = 2020-06-19T20:47:03-04:00
+lastmod = 2020-12-13T20:15:35-05:00
 draft = false
 +++
 

@@ -1,4 +1,0 @@
-#+setupfile: ./hugo_setup.org
-#+title: Unix
-
-- tags :: [[file:linux.org][Linux]]

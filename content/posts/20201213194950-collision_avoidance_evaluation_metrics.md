@@ -1,0 +1,19 @@
++++
+title = "Collision Avoidance Evaluation Metrics"
+author = ["Alex Day"]
+lastmod = 2020-12-13T20:19:27-05:00
+draft = false
++++
+
+## Energy Efficiency {#energy-efficiency}
+
+A measure of the energy spent as a quotient of how much progress to the goal was made. Defined in cite:godoy2014anytime,godoy2020c. This is calculated at each timestep and can be summed out over an agent's life. The higher the energy efficiency the more efficient the agent moved over its lifetime.
+
+\begin{eqnarray}
+\label{eq:1}
+\text{Progress}(a) & = & v \cdot \frac{g - p}{\Vert g - p \Vert}\\\\\\
+\text{Energy}(a) & = & b + c \cdot \Vert v\_{} \Vert ^{2}\\\\\\
+\text{Energy Efficiency}(a) & = & \frac{\text{Progress}(a)}{\text{Energy}(a)}
+\end{eqnarray}
+
+The value of \\(b\\) corresponds to the power consumed by the agent when procssing and sensing and \\(c \cdot \Vert v \Vert ^{2}\\) corresponds by the kenetic enery spend by the agent when moving. \\(\sqrt{\frac{b}{c}}\\) denotes the optimal agent speed in terms of energy per second. A simple way to calculate these would be to make \\(b = v\_{\text{max}}^{2}\\) so that \\(\sqrt{\frac{b}{c}} = v\_{\text{max}}\\)

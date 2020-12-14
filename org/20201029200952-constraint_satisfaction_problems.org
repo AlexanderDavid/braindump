@@ -1,0 +1,15 @@
+#+setupfile:./hugo_setup.org
+#+title: Constraint Satisfaction Problems
+#+ROAM_TAGS: AI
+
+- tags :: [[file:20200903164633-artificial_intelligence.org][Artificial Intelligence]]
+
+* Constraint Graph
+** Independence
+- Different components can have independent solutions
+** Tree
+- Thm: If the constraint graph is a tree it can be solved in $\mathcal{O}(nd^2)$ time
+** Iterative Improvement
+- Keep some local state that you try to improve
+- Fast and memory-efficient but  bsincomplete and sub optimal
+- Combine multiple local states and then randomly try and fix all conflicts

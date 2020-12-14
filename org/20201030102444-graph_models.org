@@ -1,0 +1,20 @@
+#+setupfile:./hugo_setup.org
+#+title: Graph Models
+#+ROAM_TAGS: "Network Science"
+
+- tags :: [[file:20200825162306-network_science.org][Network Science]]
+
+- Random Model
+  + Model $G(n, m)$ is a probability distribution $P(G)$ over all graphs with $n$ nodes and $m$ edges
+  + Properties of model = properties of ensemble
+  + Examples
+    - Graph diameter $l(G)$ means
+      + $\langle l \rangle = \Sigma_{G}P(G)l(g) = \frac{1}{\Omega} \Sigma_{G}l(G)$
+    - degree $\langle d(\cdot) \rangle = \frac{2m}{n}$
+- GNP Model $G(n, p)$, graphs with $n$ nodes and independent probability $p$ for edge b/w two nodes
+  + Proprties of model = properties of ensemble wheere graph with $m$ edges appears with probability:
+        [[file:images/2020-10-01_10-26-28_screenshot.png]]
+  + And prob of drawing a graph with $m$ edges is
+        [[file:images/2020-10-01_10-26-57_screenshot.png]]
+- Giant Component in GNP
+  + Giant component is a network component whose size grows in proportion to $n$

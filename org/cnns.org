@@ -1,4 +1,0 @@
-#+setupfile:./hugo_setup.org
-#+hugo_slug: convolutional_neural_networks
-#+roam_alias: CNNs
-#+title: Convolutional Neural Networks

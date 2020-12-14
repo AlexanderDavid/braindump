@@ -1,0 +1,23 @@
+#+setupfile:./hugo_setup.org
+#+TITLE: Crowd-robot interaction: crowd-aware robot navigation with attention-based deep reinforcement learning
+#+ROAM_KEY: cite:chen2019crowdrobot
+#+ROAM_TAGS: Papers "Collision Avoidance" Robotics
+
+* TODO Notes
+:PROPERTIES:
+:Custom_ID: chen2019crowdrobot
+:NOTER_DOCUMENT: /home/alex/Dropbox/notes/papers/chen2019crowdrobot.pdf
+:AUTHOR: Chen, C. et al.
+:JOURNAL: 
+:DATE: 
+:YEAR: 2019
+:DOI: 
+:URL: 
+:END:
+** Testing 
+- Humans are modelled by ORCA
+  + Parameters sampled through guassian
+- Circle crossing both train and test
+  + Radius of 4m
+  + Goal positions on antipode
+  + Random pertubation added to x, y of start and goal

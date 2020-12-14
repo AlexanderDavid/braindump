@@ -1,0 +1,22 @@
+#+setupfile:./hugo_setup.org
+#+TITLE: Markov Models
+#+ROAM_TAGS: AI Probability
+
+- tags :: [[file:20200903164633-artificial_intelligence.org][Artificial Intelligence]]
+
+* Markov Model
+    - Markov models are defined by
+      + Some states $X$
+      + Initial Distribution $P(X_{_{1}})$
+      + Transitions $P({X_{t}|X{t-1})$
+    - Basic conditional independence
+      + Past and future independent given the present
+      + Each time step only depends on the previous
+      + First order markov property
+    - Example
+        [[file:images/2020-10-29_17-04-00_screenshot.png]]
+      + $P(x_{1})$ known
+      + $P(X_{t}) = \Sigma_{x_{t-1}}P(X_{t}, X_{t-1}=x_{t-1}) = \Sigma_{x_{t-1}}P(X_{t}|X_{t-1}=x_{t-1})P(x_{t-1})$
+    - Markov models come to convergence at some $t$
+      + This is called the stationary distribution or $P_{\infty}$
+      + $P_{\infty}(X) = P_{\infty + 1}(X)$

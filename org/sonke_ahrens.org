@@ -1,3 +1,0 @@
-#+setupfile:./hugo_setup.org
-#+hugo_slug: sonke_ahrens
-#+title: Sonke Ahrens

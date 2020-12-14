@@ -1,7 +1,0 @@
-#+setupfile:./hugo_setup.org
-#+title: Emacs
-
-Much of Emacs is written in [[file:emacs_lisp.org][Emacs Lisp]].
-
-* Iconic Blog Posts
-- [[https://sites.google.com/site/steveyegge2/tour-de-babel][tour-de-babel - steveyegge2]]

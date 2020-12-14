@@ -1,0 +1,25 @@
+#+setupfile:./hugo_setup.org
+#+title: Particle Filtering
+#+ROAM_TAGS: AI
+
+* Why Particle Filtering?
+- Sometimes $|X|$ is too big to use exact inference
+  + $|X|$ may be too big to even store $B(X)$
+  + E.g. X is continuous
+* What is Particle Filtering?
+- A way of narrowing down the state space for filtering using [[file:hidden-markov-models.org][Hidden Markov Models]]
+- Approximate inference using samples (particles)
+- Track samples of X not all values
+- Time per step: $O(|\text{particles}|)$
+  + But the number may be large
+- In memory: list of particles not states
+- Aka Monte Carlo filter, Survival of the fittest, Bootstrap filter
+* Particles
+- $B(X_t) = P(X_{t}|e_{1:t})$ is now a list of samples ${x_{t}^{1}, x_{t}^{2}, \dots, x_{t}^{N}}$
+  + Generally N << |X|
+  + Storing map from X to counts would defeat the point
+* Step 1: Time Update
+- Problem
+  + Given ${x_{t}^{1}, x_{t}^{2}, \dots, x_{t}^{N}}$ approximating $B(X_{t})$, find the next set of particles
+- Solution
+  + Move each particle by sampling it's next position from the transition model

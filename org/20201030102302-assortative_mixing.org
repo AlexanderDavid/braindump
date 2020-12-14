@@ -1,0 +1,23 @@
+#+setupfile:./hugo_setup.org
+#+title: Assortative Mixing
+#+ROAM_TAGS: "Network Science"
+
+- tags :: [[file:20200825162306-network_science.org][Network Science]]
+
+- The tendency of individuals to associate and bond with similar others
+  + Examples: Social networks, citation networks, web page langauges, animals
+- /Disassortative Mixing/ - Opposite to assortative
+** Discrete
+- $c_i$ - type of vertex $i$
+- $\delta(i,j)$ - Kronnecker delta
+- $q=\frac{1}{2}\Sigma_{ij}A_{aj}\delta(c_i, c_j) - \frac{1}{2}\Sigma_{ij}\frac{d(i)d(j)}{2m}\delta(c_i, c_j)$
+  + TOtal number of edges between similar vertexes
+  + Expected number of edges between similar vertexes in a random model
+- $Q = q/m$ is called the /modularity/
+- Modularity is a measure of the extent to which like is connected to like in a network
+* Scalar
+[[file:images/2020-09-24_10-14-18_screenshot.png]]
+* Modularity Maximization
+- Easy way to cluster
+- Iterative algorithm $O(mn)$
+- Spectral Modularity Maximization

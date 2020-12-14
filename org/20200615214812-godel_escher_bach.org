@@ -1,0 +1,7 @@
+#+setupfile:./hugo_setup.org
+#+title: Gödel, Escher, Bach
+#+roam_tags: Book
+
+One interesting thing about this book is that each chapter starts with a dialog between the turtle and Achilles from Zeno's paradox.
+
+Gödel, Escher, Bach is a book about strange loops. Self referential structures that the author supposes that these strange loops are the basis of all consciousness. The author starts this book with an overview of all three Gödel, Escher, and Bach. Then moves onto an introduction to formal languages and how their isomorphism can be real things in the world. This starts with a formal system that can produce truths for addition. That is a string of the form ~---p---e-------~ is equal to ~3 + 3 = 6~.

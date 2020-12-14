@@ -1,0 +1,18 @@
+#+setupfile:./hugo_setup.org
+#+TITLE: The slashdot zoo: mining a social network with negative edges
+#+ROAM_KEY: cite:kunegis2009slashdot
+#+ROAM_TAGS: Paper "Network Science"
+
+- tags :: [[file:20200825162306-network_science.org][Network Science]]
+
+* The Slashdot Zoo
+:PROPERTIES:
+:Custom_ID: kunegis2009slashdot
+:NOTER_DOCUMENT: /home/alex/Dropbox/notes/papers/kunegis2009slashdot.pdf
+:AUTHOR: Kunegis, J\'er\^ome et al.
+:JOURNAL:
+:DATE:
+:YEAR: 2009
+:DOI:
+:URL:
+:END:

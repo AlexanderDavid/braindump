@@ -1,0 +1,11 @@
+#+setupfile:./hugo_setup.org
+#+title: Encoding Defensive Driving with Noncooperative Differential Games
+#+roam_tags: RSS2020
+
+Model autonomous driving as a game theory game.
+
+Given a couple of agents time is split into adversarial and cooperative times
+
+In t_{adv} the ego vehicle assumes that they are gonna hit them.
+
+This allows ego vehicle to swerve only within a time horizon

@@ -1,0 +1,16 @@
+#+setupfile:./hugo_setup.org
+#+TITLE: Hoaxy
+#+ROAM_KEY: cite:shao2016hoaxy
+#+ROAM_TAGS: Paper "Network Science" "Data Visualization"
+
+- tags :: [[file:20200825162306-network_science.org][Network Science]]
+- keywords ::
+
+* [[/home/alex/Dropbox/notes/papers/shao2016hoaxy.pdf][Hoaxy]]
+  :PROPERTIES:
+  :Custom_ID: shao2016hoaxy
+  :URL: http://dx.doi.org/10.1145/2872518.2890098
+  :AUTHOR: Shao, C., Ciampaglia, G. L., Flammini, A., & Menczer, F.
+  :NOTER_DOCUMENT: /home/alex/Dropbox/notes/papers/shao2016hoaxy.pdf
+  :NOTER_PAGE:
+  :END:

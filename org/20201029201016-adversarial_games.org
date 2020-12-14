@@ -1,0 +1,55 @@
+#+setupfile:./hugo_setup.org
+#+title: Adversarial Games
+#+ROAM_TAGS: AI
+
+- tags :: [[file:20200903164633-artificial_intelligence.org][Artificial Intelligence]]
+
+* Types of Games
+- Axes
+  + Deterministic vs Stochastic
+  + Perfect Information
+  + One, two, or more players?
+  + Zero sum?
+    [[file:images/2020-09-24_17-13-31_screenshot.png]]
+
+* Deterministic Games
+- Search Problem
+  + States: $S$ (starts at $s_0$)
+  + Players: $P={1\dots N}$
+  + Actions: $A$
+  + Transition Function $S \times A \rightarrow S$
+  + Terminal test: $S \rightarrow \{\text{true},\text{false}\}$
+  + Terminal utilities: $S \times P \rightarrow \mathbb{R}$
+- Solution for a /player/ p is a policy $\pi_p:S \rightarrow A$
+  + $\pi_p$ is defined when it is $p$'s turn to play
+* Why are games hard?
+- The utility comes at the end of the game
+- Each state is controlled by different players
+* Zero Sum Games
+- Agents have opposite utilities
+- Single value on maximizes that the other minimizes
+- Adversarial, pure competition
+* General Games
+- Agents have independent utilities
+- Cooperation, indifference, competition, etc.
+* MinMax
+- Perfect play for deterministic, fully observable games
+- One player maximizes result, the other minimizes result
+- Idea: Choose node with highest minimax value = best achievable utility against best play
+- Has all properties of DFS
+  + Complete, if the tree is finite
+  + Optimal against optimal opponent
+  + Time: $O(b^m)$ where $b$ is the average number of actions and $m$ is the average number of moves per game
+  + Space $O(bm)$
+* Alpha/Beta Pruning
+- Used to eliminate some paths of exploration for MinMax algorithm
+- General Configuration (MIN version)
+  + We're computing the MIN-VALUE at some node $n$
+  + Let $\alpha$ be the best value to MAX found so far off the current path
+  + If $n$ is worth than $\alpha$, MAX will avoid it, so we can stop considering $n$'s other children (prune the branch)
+- Does not affect final result
+  + Values of nodes not taken may be wrong though
+- $O(b^{m/2})$
+* Depth Limited Search
+- Search only to a limited depth in the tree
+- Replace terminal utilities with an evaluation function for non-terminal positions (estimate desirability of positions)

@@ -1,0 +1,182 @@
+#+setupfile:./hugo_setup.org
+#+title: Node Centrality
+#+ROAM_TAGS: "Network Science"
+
+- tags :: [[file:20200825162306-network_science.org][Network Science]]
+
+
+- Q: What are the most important nodes and edges
+  - A: The modes with the highest centrality
+  - There are many ways to determine centrality
+    - Degree Centrality - Number of connections
+    - Closeness centrality - Average distance to each node
+    - Edge removal centrality - What happens to some metric on the graph when this edge is removed
+
+* Eccentricity
+
+- $\forall i \in V$ we define $e(i) = max\{\delta_{ij}|j \in V\}$
+- Eccentricity centrality $c_{E}(i)=\frac{1}{e(i)}$
+- The eccentricity centrality of a node is 1 over the longest path that the node is connected to
+- Important with roads (hospital placement) and other domains
+
+* Eigenvector Centrality
+
+- A nodes importance is defined by the sum of all its neighbors degrees up to some depth $t$
+[[file:images/2020-09-03_16-54-55_screenshot.png]]
+
+- $x^{(t)} = A^tx^{(0)}$
+- Rewrite $x^{(0)}$ as a linear combo of eigenvectors of $A$
+  - $x^{(t)}=A^t\Sigma_ic_iv_i=\Sigma_ic_iA^tv_i=\Sigma_ic_i\lambda^t_iv_i$
+
+* PageRank
+
+- Similar mathamatically and computationally to Eigenvalue
+- Billion Dollar Centrality (Google started with this idea for web page ranking)
+- Indicates a nodes importance with random probability of visiting a node while surfing the web
+- We create a *transition matrix* for the random surfer denoted as $P$
+- Markov Chains give us the probabilities of visiting the pages after $k$ steps is $P^kx$ where $x$ is the probability of the surfer starting at each node
+- *Problem: *dangling nodes** $d^+(i)=0$
+- *Solution:* damping factor $\alpha$ (usually small) and used for random teleportation
+    - $P^\prime=(1- \alpha )P+\alpha T$ where
+        \begin{equation}
+            T = \frac{1}{n}
+            \begin{pmatrix}
+            1 & \cdots & 1 \\
+            \vdots & \ddots & \vdots \\
+            1 & \cdots & 1
+            \end{pmatrix}
+        \end{equation}
+- This is equivalent to solving the eigenproblem $P'v=v$
+- Solving is very expensive because this is a dense matrix with no non-zero entries
+- Iterative computation for solving the system with $P'$ is less expensive
+- The principal eigenvector of $P'$ is a PageRank
+
+* Hubs and Authorities
+
+- In some cases a vertex may be important if it points to others with high centrality
+  - X sends information to many leaders who don't know X , i.e. X is influential
+  - Scientific paper citations: A review article (hub) may cite other articles (authorities) that are authoritative sources for information
+- *Authorities* - Nodes that contain useful information
+- *Hubs* - Nodes that point to the best Authorities
+- $A$ is an adj matrix
+- $\vec{x}$ - authorities and $\vec{y}$ - hubs
+- Node $i$ gets some $\vec{x_i}$ value which is the authoritativeness and then $\vec{y_i}$ is the hub-ness of node $i$
+- $\vec{x_i} = \alpha \Sigma_{j} A_{ij} \vec{y_j}$ where $\alpha$ is some scaling factor
+- $\vec{y_i} = \beta \Sigma_j A_{ji} \vec{x_j}$ where $\beta$ is some scaling factor
+- Solve for $$\vec{x_i}$$ by plugging it in
+- $\vec{x_i} = \alpha \beta \Sigma_j A_{ij} A_{ji} \vec{x_j}$
+- $AA^t\vec{x} = (\alpha \beta)^{-1} \vec{x} = \lambda \vec{x}$
+- $A^TA\vec{y}=\lambda \vec{y}$
+- This is called the **HITS** algorithm
+- Introduced in [[file:kleinberg1999authoritative.org][Authoritative sources in a hyperlinked environment]]
+
+* Closeness Centrality
+
+- $\delta_{ij} =$ length of $i-j$ shortest path
+- $\forall i \in V C_i = \frac{1}{l_i}$, where $l_i=\frac{1}{n}\Sigma_{j \in V} \delta_{ij}$
+- Problems:
+    - Graphs with multiple components
+        - Solution: Harmonic mean distance centrality
+        - $\forall i \in V C'_{i} = \frac{1}{n-1} \Sigma_{j \ne i} \frac{1}{\delta_{ij}}$
+    - In real life networks the paths are normally relatively small
+        - Six degrees of separation
+        - Internet Movie Database
+            - Highest centrality = 0.4143, lowest centrality = 0.1154
+            - Does not span a large range
+    - Highly sensitive (one edge removal and all distances are increased)
+    - Geodesic distances are integers, *often small because distance increases with the log of the network size*
+- Useful for geographic networks without shortcuts
+- Not useful for networks with shortcuts (like internet)
+
+* Enumeration of Shortest Paths-based Centrality
+- $\sigma_{st}(i)$ is a number of s-t shortest paths containing i
+- $\sigma_{st}$ is a number of all s-t shortest paths
+- *Observation*: In practice communication or transport in networks follow different kinds of paths that tend to be the shortest
+  - How much /work/ can be done by a node?
+** Stress Centrality
+- Measures the amount of communication that passes through a node/edge
+- For nodes:
+    $c_S(i) = \Sigma_{s \neq  i} \Sigma_{t \neq i} \sigma_{st}(i)$
+- For edges:
+    $c_S(ij) = \Sigma_{s \in  V} \Sigma_{t \in V} \sigma_{st}(ij)$
+** Betweeness Centrality
+- $c_B(i) = \Sigma_{s\neq i} \Sigma_{t \neq i} \frac{\sigma_{st}(i)}{\sigma_{st}}$
+- $c_B(ij) = \Sigma_{s \in  V} \Sigma_{t \in V} \frac{\sigma_{st}(ij)}{\sigma{st}}$
+- Stress Centrality but normalized by the total number of shortest paths. This allows us to compare the values between nodes and between graphs
+- Introduced in [[file:freeman1977set.org][A set of measures of centrality based on betweenness]]
+** Problems
+- BC is extremely sensitive to network dynamics (edge/node removal/addition)
+  + $\epsilon-$ BC: Replace all short shortest paths with some other value
+
+* Traversal Sets
+- $\forall ij \in E$ we define the edge's traversal set $T_{ij} = \{(s, t) \in V \times V | \text{ some shortest path s-t contains } ij\}$
+- and the traversal set induced graph:
+  $G[T_{ij}]=(V', E')$, where $V'=\{k \in V | (k, t) \in T_ij \vee (s, k) \in T_{ij}\}$, and $E^{\prime} = \{(s, t) \in T_{ij}\}$
+- $|T_{ij}|$ is a good measure
+- Another measure based on $T_{ij}$ is the edge centrality index:
+    $c_{ts}(ij) = |H|\text{, where H is a minimum vertex cover in } G[T_{ij}]$
+- that can be used in characterization of networks with hierarchical organization
+- *Note* There is a thm that states: ina bipartite graphs the min size of a vertex cover = the size of a maximum matching
+
+** Example of Hierarchical Organization
+- Transportation Roads Density
+* Feedback Centrality
+- Simple, directed $G$, no loops
+  + $\vorall i \in V c_K(i) = \Sigma^{\infty}_{k=1}\Sigma^n_{j=1}\alpha_k(A^k)ji$
+  + The sum converges with restricted with $\alpha_k$
+  + **Theorem**: If $A$ is the adj matrix of $G$, $\alpha > 0$, and $\lambda_1$ the largest eigenvalue of $A$, then
+    - $\lambda_1<\frac{1}{\alpha} \iff \Sigma^{\infty}_{k=1}\alpha^k A^k$ converges
+    - and $c_K=(I-\alpha A)^{-1} \cdot \textbb{1}_n$
+* Network Flow
+[[file:images/2020-09-10_09-43-57_screenshot.png]]
+- The flow within the network is given by the following eqns
+  + Capacity: $\forall e \in E: 0 <= f(e) <= u(e)$ (The flow through an edge must not exceed the capacity of the edge)
+  + Balance $\vorall v \in V {s, t}: \Sigma_{e \in \Gamma^-(v)}f(e) = \Sigma_{e \in \Gamma^+(v)}f(e)$ (The flow if the in must be the flow of the out edges for all nodes except s and t (start and terminate))
+- The value of the flow $f$ is defined as $\Sigma_{e \in \Gamma^+(s)} f(e)$
+- Computing the flow is $O(nm \log{\frac{n^2}{m}})$
+- Ford-Fulkerson thm says that the value of a maximum s-t-flow = the capacity of the minimum s-t-cut.
+* Vitality (robustness)
+[[file:images/2020-09-10_09-52-52_screenshot.png]]
+- What happens with the network if we remove some network from the element
+** Max-flow Betweenness Vitality
+- How much flow must go over a vertex $i$ in order to obtain the maximum flow value? How much does the objective function change if we remove $i$ from the network?
+[[file:images/2020-09-10_09-54-39_screenshot.png]]
+** Closeness Vitality
+- Wiener index of a network
+  $I_w(G)=\Sigma_{i,j\inV}\sigma_{ij}$
+  or in terms of closeness
+  $I_w(G)=n \cdot \Sigma_{i \in V}\frac{1}{C_i}$
+  Closeness vitality is defined on both vertecies and edges
+  $c_{CV}(x)=I_W(G)-I_W(G \textbackslash \{x\})$
+** Stress Centrality as a Vitality Index
+- $\sigma_{st}(i)$ is the number of s-t shortest paths containing $i$
+- $\sigma_{st}$ is the number of all s-t shortest paths
+- $c_S(i) = \Sigma_{s \neq i}\Sigma_{t \neq i}\sigma{st}(i)$
+- $c_S(ij)=\Sigma_{s \in V}\Sigma{t \in V}\sigma_{st}(ij)$
+- Can be interpreted as the # of shortest paths that are lost if a vertex or edge is removed from the graph
+- However, when you remove an edge you might increase the number of shortest paths
+* Current Flow
+- Introduced in [[file:newman2005measure.org][A measure of betweenness centrality based on random walks]]
+* How to compare Centrality concepts
+** Normalization in one network
+- p-norm of the centrality vector for concept **X**
+    [[file:images/2020-09-10_10-15-42_screenshot.png]]
+ - Separation of positive and negative values of $c_\textbf{X}$
+    [[file:images/2020-09-10_10-16-37_screenshot.png]]
+
+** Normalization in different networks
+- Point centrality
+    [[file:images/2020-09-10_10-18-09_screenshot.png]]
+- Examples
+  - Degree centrality = normalization by factor of (n-1)
+  - Shortest paths betweenness centrality $c_{B}(i)=\Sigma_{s \neq i}\Sigma{t \neq i}\frac{\sigma_{st}(i)}{\sigma_{st}}$
+    + Star graph $c_B(i)=\frac{(n-1)(n-1)}{2}$
+
+* Centrality Measures Category
+:PROPERTIES:
+:ID:       007a905f-fadc-4d43-a337-8fc1d251bed3
+:END:
+- Reachability
+- Flow
+- Vitality
+- Feedback

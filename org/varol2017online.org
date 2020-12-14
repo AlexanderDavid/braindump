@@ -1,0 +1,17 @@
+#+setupfile:./hugo_setup.org
+#+TITLE: Online human-bot interactions: detection, estimation, and characterization
+#+ROAM_KEY: cite:varol2017online
+#+ROAM_TAGS: Paper
+
+- tags :: [[file:20200825162306-network_science.org][Network Science]]
+- keywords :: Network Science Final
+
+* [[/home/alex/Dropbox/notes/papers/varol2017online.pdf][Online human-bot interactions: detection, estimation, and characterization]]
+  :PROPERTIES:
+  :Custom_ID: varol2017online
+  :URL:
+  :AUTHOR: Varol, O., Ferrara, E., Davis, C. A., Menczer, F., & Flammini, A.
+  :NOTER_DOCUMENT: /home/alex/Dropbox/notes/papers/varol2017online.pdf
+  :NOTER_PAGE:
+  :END:
+  - More in depth view of [[file:davis2016botornot.org][Botornot: a system to evaluate social bots]]

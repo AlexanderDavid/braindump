@@ -1,7 +1,0 @@
-#+setupfile: ./hugo_setup.org
-#+title: VisGel
-#+roam_key: http://visgel.csail.mit.edu/
-
-- tags :: [[file:multimodal_machine_learning.org][Multi-modal Machine Learning]]
-
-Visgel looks at synthesizing plausible tactile signals from visual inputs, as well as imagining object interactions with tactile data as input.

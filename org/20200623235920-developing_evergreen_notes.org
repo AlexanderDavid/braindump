@@ -1,0 +1,20 @@
+#+setupfile:./hugo_setup.org
+#+title: Developing Evergreen Notes
+#+roam_tags: Notetaking
+
+[[file:20200623233650-evergreen_notes.org][Evergreen notes]] don't just appear fully formed in your database. You have to go through an evolution:
+1. Stubs defined through backlinks
+   A page can be defined by the context it is linked to, even if that page has no context.
+2. Simple definitions
+3. Exact notes on a specific subject
+4. High level abstract note
+
+The evergreen note doesn't have to go through these explicit steps but this is a solid route to evergreen-ness
+
+
+
+
+
+
+* References
+[[https://notes.andymatuschak.org/Taxonomy_of_note_types][Andy's Note on this specific topic]]

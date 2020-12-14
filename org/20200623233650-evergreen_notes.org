@@ -1,0 +1,20 @@
+#+setupfile:./hugo_setup.org
+#+title: Evergreen notes
+#+roam_tags: Notetaking Zettelkasten
+
+Evergreen notes are notes about one concept that are heavily linked to. I think these are central notes in your note graph that everything revolves around. There are a couple of "Rules" for evergreen notes that I have seen around:
+
+1. Be atomic (about one specific thing)
+
+   This keeps the single notes from becoming too big and swallowing other notes. This means that every edge on the graph is meaningful and specific
+
+2. Be concept oriented
+
+   Think about taking notes in a class. You may segment notes by day, maybe by chapter. This rule argues that you should segment by concept. This allows you to discover connections across books and domains.
+
+3. Densely linked
+
+   This is what is being built to. By keeping your notes small and about one thing they are easy to link to in the right context. This allows you to build a second brain with its own pathways and nodes.
+
+* Other writings on Evergreen Notes
+- [[https://notes.andymatuschak.org/Evergreen_notes][Andy Matuschak]]

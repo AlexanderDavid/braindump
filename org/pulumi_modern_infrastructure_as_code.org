@@ -1,4 +1,0 @@
-#+title: Pulumi
-#+roam_key: https://www.pulumi.com/
-
-Pulumi is like Terraform, but uses a real programming language for declaring infrastructure.

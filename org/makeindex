@@ -1,0 +1,43 @@
+#! /usr/bin/sh
+
+function get_title() {
+	 grep --ignore-case -Po "(?<=#\+title: ).*" $1
+}
+
+function get_link() {
+	retval="[[file:$1][$(get_title $1)]]"
+}
+
+
+
+DAILIES=$(ls | grep -P "(\d{4}-\d{2}-\d{2}\.org)")
+BOOKS=$(find ./books/ -type f | grep "\.org")
+PAPERS=$(rg -l "#\+ROAM_KEY: cite:" -g ./* | grep ".org")
+NOTES=$(rg --files-without-match "#\+ROAM_KEY: cite:" -g ./* | grep "\.org" | grep -Pv "\d{4}-\d{2}-\d{2}" | grep -v "index.org")
+
+echo -e "#+title: Index\n\n* Dailies" > index.org
+
+for FILE in $DAILIES; do
+	get_link $FILE
+	echo -e "- $retval" >> index.org
+done
+
+echo -e "\n* Notes" >> index.org
+
+for FILE in $NOTES; do
+	get_link $FILE
+	echo -e "- $retval" >> index.org
+done
+
+# echo -e "\n* Papers" >> index.org
+
+# for FILE in $PAPERS; do
+# 	get_link $FILE
+# 	echo -e "- $retval" >> index.org
+# done
+
+echo -e "\n* Books" >> index.org
+for FILE in $BOOKS; do
+	get_link $FILE
+	echo -e "- $retval" >> index.org
+done

@@ -1,12 +1,13 @@
 +++
 title = "Python Multiprocessing"
 author = ["Alex Day"]
-lastmod = 2020-06-19T20:47:13-04:00
+lastmod = 2020-12-13T20:15:47-05:00
 draft = false
 +++
 
 tags
 : [Python]({{< relref "20200618150702-python" >}})
+
 
 ## [Concurrent Futures](https://docs.python.org/3/library/concurrent.futures.html) {#concurrent-futures}
 

@@ -1,7 +1,0 @@
-#+setupfile:./hugo_setup.org
-#+title: Find (CLI Tool)
-
-- tags :: [[file:unix.org][Unix]]
-
-* Links
-- [[http://www.grymoire.com/Unix/Find.html][Find]]

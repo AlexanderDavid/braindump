@@ -1,3 +1,0 @@
-#+setupfile: ./hugo_setup.org
-#+title: Learning
-#+tags: learning

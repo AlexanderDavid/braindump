@@ -1,5 +1,0 @@
-#+setupfile: ./hugo_setup.org
-#+title: Google - Site Reliability Engineering
-#+roam_key: https://landing.google.com/sre/books/
-
-- tags :: [[file:site_reliability.org][Site Reliability]]

@@ -1,7 +1,0 @@
-#+setupfile:./hugo_setup.org
-#+title: Awk
-
-- tags :: [[file:unix.org][Unix]]
-
-* Links
-[[http://sparky.rice.edu/~hartigan/awk.html]]

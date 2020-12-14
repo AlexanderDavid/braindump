@@ -1,9 +1,0 @@
-#+setupfile:./hugo_setup.org
-#+title: Emacs Lisp
-
-- tags :: [[file:prog_lang.org][Programming Languages]]
-
-In preparation for submission to MELPA, one should run [[https://github.com/purcell/package-lint][package-lint]] on
-the code.
-
-- [[https://github.com/chrisdone/elisp-guide][GitHub - chrisdone/elisp-guide]]
